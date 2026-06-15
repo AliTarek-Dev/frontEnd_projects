@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+@font-face {
+  font-family: "atari";
+  src: url(../fonts/PressStart2P-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(34, 34, 34);
+  color: #eee;
+  font-family: "atari", sans-serif;
+}
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid #eee;
+}
+h1.main-head {
+  font-size: 2.6rem;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p.number {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.1rem;
+}
+.btn {
+  color: #222;
+  background-color: #eee;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1.6rem 1.4rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.btn:hover {
+  background-color: #ccc;
+}
+.again {
+  position: absolute;
+  top: 1.3rem;
+  left: 3rem;
+}
+.the-box {
+  background-color: #eee;
+  position: absolute;
+  width: 11.2rem;
+  height: 8.4rem;
+  color: #222;
+  font-size: 4.5rem;
+  text-align: center;
+  padding: 2.5rem;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center;
+}
+.left {
+  width: 71rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 53rem;
+  font-size: 1.3rem;
+}
+.message {
+  margin-bottom: 4rem;
+}
+main {
+  height: 65vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
+.score {
+  margin-bottom: 2rem;
+}
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  width: 16rem;
+  height: 8rem;
+  font-size: 3.5rem;
+  padding: 1.8rem;
+  font-family: inherit;
+  text-align: center;
+  color: inherit;
+  display: block;
+  margin-bottom: 3rem;
+  outline: none;
+}
+
+.amount {
+  font-size: 2rem;
+}
+.score-percent {
+  margin-right: 0.2rem;
+}
+
+@media (max-width: 1024px) {
+  h1.main-head {
+    font-size: 2rem;
+    position: absolute;
+    top: 55%;
+  }
+
+  main {
+    gap: 3rem;
+  }
+
+  .left {
+    width: 55rem;
+  }
+  .right {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 40vh;
+  }
+
+  h1.main-head {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 70%;
+  }
+
+  p.number {
+    top: 1.9rem;
+    right: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .again {
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.2rem;
+    padding: 1.2rem 1rem;
+  }
+  .the-box {
+    width: 9rem;
+    height: 7rem;
+    font-size: 3.5rem;
+    padding: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+    height: auto;
+    padding: 5rem 2rem 3rem;
+    gap: 2.5rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .guess {
+    width: 14rem;
+    height: 7rem;
+    font-size: 3rem;
+  }
+
+  .message {
+    margin-bottom: 4rem;
+  }
+  .amount {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 45vh;
+  }
+
+  h1.main-head {
+    font-size: 1.1rem;
+    position: absolute;
+    top: 62%;
+  }
+
+  p.number {
+    font-size: 0.85rem;
+    top: 2rem;
+    right: 0.8rem;
+  }
+
+  .again {
+    top: 0.8rem;
+    left: 0.8rem;
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .the-box {
+    width: 7.5rem;
+    height: 6rem;
+    font-size: 2.8rem;
+    padding: 1.6rem;
+  }
+
+  main {
+    padding: 4rem 1rem 2rem;
+    gap: 2rem;
+  }
+
+  .guess {
+    width: 11rem;
+    height: 6rem;
+    font-size: 2.4rem;
+    padding: 1.2rem;
+  }
+
+  .score {
+    margin-bottom: 1.2rem;
+  }
+  .message {
+    margin-bottom: 2.5rem;
+  }
+  .amount {
+    font-size: 1.3rem;
+  }
+  .right {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 380px) {
+  p.number {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  h1.main-head {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 70%;
+  }
+  p.number {
+    font-size: 0.6rem;
+    top: 2rem;
+    right: 0.8rem;
+  }
+  .again {
+    top: 0.8rem;
+    left: 0.8rem;
+    font-size: 1rem;
+    padding: 0.7rem 0.6rem;
+  }
+  .message {
+    font-size: 0.9rem;
+  }
+  .highest-score {
+    font-size: 0.9rem;
+  }
+  .guess {
+    width: 9rem;
+    font-size: 2rem;
+  }
+  .the-box {
+    width: 6.5rem;
+    font-size: 2.4rem;
+    transform:;
+  }
+}

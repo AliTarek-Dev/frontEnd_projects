@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessGame</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/imgs/alien_monster_atari.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main-head">Guess My Number!</h1>
+      <p class="number">(Between 1 and 20)</p>
+      <button class="btn again">Again!</button>
+      <div class="the-box">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <div class="btn check">Check!</div>
+      </section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="score">
+          <span class="amount score-percent">💯</span>Score:
+          <span class="score-value">15</span>
+        </p>
+        <p class="highest-score">
+          <span class="amount">🔥</span>Highest Score:
+          <span class="heighest-value">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
